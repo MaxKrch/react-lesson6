@@ -1,10 +1,7 @@
 function App() {
-
   return (
     <div className="text-green flex justify-center align-center w-screen">
-      <p>
-        Hello
-      </p>
+      <p>Hello</p>
     </div>
   )
 }
