@@ -15,8 +15,14 @@
     "test": "vitest --passWithNoTests"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.1.1",
+    "axios": "^1.10.0",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.59.0",
+    "zod": "^3.25.73"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
