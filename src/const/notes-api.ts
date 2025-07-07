@@ -1,4 +1,4 @@
-export const NOTE_API= {
+export const NOTE_API = {
   getAll: {
     method: 'GET',
     url: '/notes',
@@ -11,6 +11,6 @@ export const NOTE_API= {
     method: 'DELETE',
     url: `/notes/${id}`,
   }),
-} as const;
+} as const
 
 export const BASE_URL = `http://localhost:7070`

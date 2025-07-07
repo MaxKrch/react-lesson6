@@ -1,6 +1,7 @@
-import type { Note } from "../../types"
+import type { Note } from '../../types'
 
 export type NoteListProps = {
-    notes: Note[],
-    onDeleteNote: (id: Note[`id`]) => void
+  notes: Note[]
+  onDeleteNote: (id: Note[`id`]) => void
+  onRefreshNotes: () => void
 }

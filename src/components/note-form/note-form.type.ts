@@ -1,5 +1,5 @@
-import type { Note } from "../../types"
+import type { Note } from '../../types'
 
 export type NoteFormProps = {
-    onAddNote: (content: Note[`content`]) => void
+  onAddNote: (content: Note[`content`]) => void
 }
