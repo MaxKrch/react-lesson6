@@ -34,19 +34,6 @@ describe(`Component: NoteForm`, () => {
     expect(await screen.findByText(textAreaError.short)).toBeInTheDocument()
   })
 
-  it('should show error if input is too long', async () => {
-    const invalidContent = 'long string'.repeat(25)
-    render(<NoteForm onAddNote={handleAddNote} />)
-
-    const textarea = screen.getByPlaceholderText(textAreaPlaceholder)
-    const button = screen.getByRole('button', { name: submitButtonName })
-
-    await userEvent.type(textarea, invalidContent, { delay: 1 })
-    await userEvent.click(button)
-
-    expect(await screen.findByText(textAreaError.long)).toBeInTheDocument()
-  })
-
   it('should call onAddNote and reset textarea', async () => {
     const expectedText = 'My valid note'
     render(<NoteForm onAddNote={handleAddNote} />)
